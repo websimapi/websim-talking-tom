@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talking Tom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🐱 Talking Tom 🐱</h1>
+            <div class="status-bar">
+                <div class="hunger">
+                    <span>🍎</span>
+                    <div class="bar">
+                        <div class="fill" id="hunger-fill"></div>
+                    </div>
+                </div>
+                <div class="happiness">
+                    <span>😊</span>
+                    <div class="bar">
+                        <div class="fill" id="happiness-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tom-container">
+            <div class="speech-bubble" id="speech-bubble">
+                <p id="speech-text">Hi! I'm Tom! Talk to me!</p>
+            </div>
+            
+            <div class="tom-character" id="tom">
+                <img src="tom.png" alt="Tom the Cat" id="tom-image">
+                <div class="eyes" id="eyes">
+                    <div class="eye left-eye"></div>
+                    <div class="eye right-eye"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" id="talk-btn">🎤 Talk</button>
+            <button class="control-btn" id="feed-btn">🍎 Feed</button>
+            <button class="control-btn" id="pet-btn">👋 Pet</button>
+            <button class="control-btn" id="poke-btn">👆 Poke</button>
+        </div>
+
+        <div class="voice-controls">
+            <button id="start-recording" class="record-btn">🎤 Start Recording</button>
+            <button id="stop-recording" class="record-btn" disabled>⏹️ Stop Recording</button>
+            <div class="recording-status" id="recording-status"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
